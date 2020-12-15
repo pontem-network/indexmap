@@ -15,9 +15,7 @@ use ::core::hash::{BuildHasher, Hash, Hasher};
 use ::core::iter::FromIterator;
 use ::core::ops::{Index, IndexMut, RangeBounds};
 use ::core::slice::{Iter as SliceIter, IterMut as SliceIterMut};
-
-#[cfg(has_std)]
-use std::collections::hash_map::RandomState;
+use hashbrown::hash_map::DefaultHashBuilder as RandomState;
 
 use self::core::IndexMapCore;
 use crate::equivalent::Equivalent;
