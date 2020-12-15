@@ -98,6 +98,7 @@ mod mutable_keys;
 #[cfg(feature = "serde-1")]
 mod serde;
 mod util;
+pub mod fxhash;
 
 pub mod map;
 pub mod set;
