@@ -99,6 +99,7 @@ mod serde;
 #[cfg(feature = "serde")]
 pub mod serde_seq;
 mod util;
+pub mod fxhash;
 
 pub mod map;
 pub mod set;
